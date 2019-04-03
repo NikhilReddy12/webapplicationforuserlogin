@@ -1,0 +1,75 @@
+<html>
+<title>Forgt ur passwrd</title>
+<style class="text/css">
+body{
+width:100%;
+height:50%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.bo{
+
+margin:200px 400px 0px 400px;
+}
+.btn{
+margin-left:150px;
+margin-top:25px;
+}
+.em{
+margin-left:25px;
+padding-left:30px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+.su{
+padding:8px 25px 8px 25px;
+background-color:green;
+color:white;
+margin-left:50px;
+}
+.lo{
+padding:8px 25px 8px 25px;
+background-color:orange;
+color:white;
+margin-left:50px;
+}
+</style>
+<body background="images\lit.jpg"  >
+
+<form action="forgot" name="myfo" method="post"  onsubmit="return validateform()" >
+<div class="bo">
+<div>
+<p style="color:green;margin-left:10px;">Enter Registered EmailId<input class="em" type="text" name="email"></p>
+<p style="color:green;margin-left:102px;">Enter DOB<input class="em" type="date" name="dob"></p>
+</div>
+<div class="btn">
+<input class="su"type="submit" value="submit">
+<a href="signin.html"><input class="lo" style="" type="button" value="login"></a>
+</div>
+<div>
+</form>
+<script>
+function validateform(){  
+var mail=document.myfo.email.value; 
+
+var x = mail.indexOf("@");
+var y = mail.lastIndexOf(".");
+var date=document.myfo.dob.value;
+if(mail==null || mail==""){
+	 alert("email can't be blank");  
+  return false; 
+}
+
+if (x < 1 || y < x + 2 || y + 2 >= x.length) {
+                alert("Not a valid e-mail address");
+                return false;
+            }
+if(date==null ||date==""){  
+  alert("Enter Date of Birth");  
+  return false;  
+ }			
+}
+</script>
+</body>
+</html>

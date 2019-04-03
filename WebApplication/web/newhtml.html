@@ -1,0 +1,167 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<title>signup page</title>
+<style type="text/css">
+.m{
+background-color:red;
+margin-top: -50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top: 20px;
+    padding-left: -20px;
+    padding-right: -50px;
+    padding-bottom: 0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	border-style: solid;
+  border-color: coral;
+  border-width:10px;
+  }
+  .name{
+width:350px;
+ height:35px;
+border-radius: 5px;
+padding:5px 5px 0px 10px;
+margin-left:55px;
+margin-right:40px;
+margin-bottom:5px;
+margin-top:10px;
+
+}
+.para{
+margin-left:65px;
+margin-right:40px;
+    
+}
+.new{
+margin-left:55px;
+margin-right:50px;
+margin-bottom:10px;
+}
+.new1{
+padding-left:55px;
+padding-right:50px;
+margin-top:15px;
+}
+.register{
+width:350px;
+height:35px;
+margin:25px;
+background-color:#6f71d6;
+color:white;
+}
+
+	</style>
+<body>
+<script type="text/javascript" src="sig.js"> </script>
+<form action="newserv" name="myform" method="post" onsubmit="return validateform()" >
+<div class="m">
+<table    cellpadding='0' cellspacing='0' align='center'>
+<center><tr>
+   <td><h1>Registration Form </h1></td>
+</tr><center>
+<table  width='350px' cellpadding='0' cellspacing='0' align='center'>
+<tr>
+
+</tr>
+<td align='right'>Full Name </td>
+<td><input class="name" type="text"  name="nam" placeholder="Full Name" /></td>
+<tr>
+<td></td>
+<td ><p class="para">Last Name,First Name eg:Smith ,Harry</p></td>
+</tr>
+<tr>
+<td align='right'>Email </td>
+<td> <input class="name" type="text" name="email"  placeholder="Email" /></td>
+</tr>
+<tr>
+<td align='right'>Password </td>
+<td><input class="name" type="password" name="pass" placeholder="password" /></td>
+</tr>
+<tr>
+<td align='right'>Date of Birth </td>
+<td><input class="name" type="date"  name="dob" placeholder="" /></td>
+</tr>
+<tr>
+<td align='right'>Country </td>
+<td>
+<select class="name" id="country1" name="country1"> 
+<option >Select</option>
+<option >India</option>
+	<option >Austria</option>
+	<option >Bangladesh</option>
+	<option >Belgium</option>
+	<option >Bhutan</option>
+	<option >Brazil</option>
+	<option >Canada</option>
+	<option >China</option>
+	<option >Colombia</option>
+	<option >Denmark</option>
+	<option >Egypt</option>
+	<option >France</option>
+	<option >Germany</option>
+	<option >Hong Kong</option>
+    <option>Indonesia</option>
+	<option >Iran</option>
+	<option >Ireland</option>
+	<option >Italy</option>
+	<option >Japan</option>
+	<option >Korea</option>
+	<option >Kuwait</option>
+	<option >Macao</option>
+	<option >Malaysia</option>
+	<option >Maldives</option>
+    <option >New Zealand</option>
+	<option >Pakistan</option>
+    <option >Philippines</option>
+	<option >Portugal</option>
+    <option >Saudi Arabia</option>
+    <option >Singapore</option>
+	<option >South Africa</option>
+    <option >Spain</option>
+	<option >Sri Lanka</option>
+	<option >Switzerland</option>
+	<option >United Kingdom</option>
+	<option >United States</option>                 
+</select>
+</td>
+</tr>
+<tr>
+<td align='right'>Gender</td>
+<td>
+<div class="name">
+<input  id="genderm"type="radio" name="gender" value="male"  > Male
+<input id="genderf" type="radio" name="gender" value="female" > Female
+<input id="gendero" type="radio" name="gender" value="others"  > Unknown
+</div></td>
+</tr>
+<tr>
+<td align='right'>Meal</td>
+<td><p class="new"><input  type="checkbox"  value="Low calorie" name="cal" >Low calorie</p></td>
+</tr>
+<tr>
+<td align='right'>Preference</td>
+<td>
+<div class="new" ><input type="checkbox" value="Low salt" name="cal1" >Low Salt
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p class="new1"><input  type="checkbox" name="terms" value="Accepted" >I accept <a href="#">terms</a></p>
+</td>
+</tr>
+<td></td>
+<td align='center'><input  class="register"  type="submit"  value="register"  /></td>
+
+</table>
+
+</div>
+</form>
+</body>
+</html>
